@@ -6,11 +6,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">></script>
 <script src="deleteAjax.js"></script>
 <script src="listarAjax.js"></script>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
 </head>
 <body>
 <h1>Bem vindo ao seu web-service particular</h1>
-<button onClick="listar()">Clique aqui</button>
-<div id="table"></div>
+<button onClick="listar()">Listar</button>
+<br>
+<br>
+<table id="table">
+	<tr id="tr">
+    <th>ID</th>
+    <th>Email</th>
+    <th>Login</th>
+    <th>Nome</th>
+    <th>Senha</th>
+    <th>Telefone</th>
+    <th>Bairro</th>
+    <th>Cidade</th>
+    <th>Estado</th>
+    <th>Numero</th>
+    <th>Rua</th>
+  </tr>
+</table>
+<br>
+	
+<button><a href="Adicionar.html">Adicionar</a></button>
+  
 
 
 </body>

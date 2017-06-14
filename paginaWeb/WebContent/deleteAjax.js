@@ -1,19 +1,17 @@
-$(document).ready(function () {
-function deletar()
+
+function deletar(id)
 { 
 $.ajax({
-            type: 'POST',
-            url: "localhost:8082/usuario/delete/",
-            data: {"id":2},
+            type: 'DELETE',
+            url: "http://localhost:8082/usuario/delete/"+id,
+            
             success: function (data, status) {
-                console.log(data);
+                alert("Deletado");
             }, error: function (data, status) {
-                console.log(data);
+                alert("Não Deletado");
 
             },
-            crossDomain: false,
-            contentType: 'application/json'
+            
 
         });
 }
-});
